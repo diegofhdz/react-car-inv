@@ -1,0 +1,13 @@
+div.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tileHeader {
+    padding: 10px;
+}
+
+.tileDesc {
+    padding: 10px;
+}

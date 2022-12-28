@@ -1,0 +1,14 @@
+:root{
+    --backgroundColor: rgb(96, 95, 95);
+}
+
+
+.main {
+    color: whitesmoke;
+    background-color: var(--backgroundColor);
+}
+
+.mainHeader {
+    text-align: center;
+    padding: 20px;
+}
