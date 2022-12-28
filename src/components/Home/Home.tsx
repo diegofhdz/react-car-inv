@@ -34,7 +34,7 @@ const useStyles = makeStyles({
 
 export const Home = () => {
     const classes = useStyles();
-    const title = "Diego's New Title";
+    const title = "Your Car Inventory";
     return (
         <>
             <Navbar />
