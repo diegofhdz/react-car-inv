@@ -1,16 +1,17 @@
 import React from 'react';
 import './dash.css';
 import { Navbar } from '../Navbar';
-import { Table } from '../Table/Table';
+import { Table_ } from '../Table/Table_';
+import { Typography } from '@mui/material';
 
 export const Dashboard = () => {
   return (
     <>
     <Navbar />
     <div className='main'>
-      <h1 className="mainHeader">Your Dashboard</h1>
+      <Typography variant="h3" className='mainHeader'>Welcome to your Dashboard</Typography>
       </div>
-    <Table />
+    <Table_ />
     </>
     
   )
