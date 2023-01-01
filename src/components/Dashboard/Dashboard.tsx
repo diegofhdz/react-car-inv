@@ -1,7 +1,7 @@
 import React from 'react';
 import './dash.css';
 import { Navbar } from '../Navbar';
-import { CarRow } from '../CarRow/CarRow';
+import { AddCarButton } from '../AddCarButton/AddCarButton';
 import { Typography } from '@mui/material';
 import { Table, TableBody, TableRow, TableCell, TableContainer, TableHead } from '@mui/material';
 import { useGetData } from '../../custom-hooks';
@@ -13,7 +13,11 @@ export const Dashboard = () => {
   return (
     <>
     <Navbar />
-      <DataTable/>
+    <div><DataTable/></div>
+    <div style={{marginTop: "90px"}}>
+      <AddCarButton/>
+    </div>
+    
     </>
   )
 }

@@ -21,8 +21,8 @@ root.render(
     <BrowserRouter>
       <Routes>
           <Route path ="/" element={<Home/>}/>
-          <Route path="/carinventory" element={<CarInventory/>}/>
-          <Route path="/addcarform" element={<Dashboard/>}/>
+          {/* <Route path="/carinventory" element={<CarInventory/>}/> */}
+          <Route path="/carinventory" element={<Dashboard/>}/>
       </Routes>
     </BrowserRouter>
     </Provider>

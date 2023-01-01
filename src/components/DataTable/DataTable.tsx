@@ -59,12 +59,11 @@ export const DataTable = () => {
         <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
             <DialogTitle id="form-dialog-title">Update Car {selectionModel}</DialogTitle>
             <DialogContent>
-                <DialogContentText >Update Car</DialogContentText>
+                <DialogContentText>Update Car</DialogContentText>
                     <CarForm id={selectionModel!}/>
             </DialogContent>
             <DialogActions>
-                <Button onClick={handleClose} color="primary">Cancel</Button>
-                <Button onClick={handleClose} color="primary">Done</Button>
+                <Button onClick={handleClose} variant="contained" color="primary">Close</Button>
             </DialogActions>
         </Dialog>
     </div>

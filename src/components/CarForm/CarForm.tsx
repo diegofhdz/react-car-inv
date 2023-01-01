@@ -26,17 +26,19 @@ export const CarForm = (props: CarFormProps) => {
 
 
   const onSubmit = (data: any, event: any) => {
-    console.log(props.id!);
-    console.log(JSON.stringify(data));
+    // console.log(props.id!);
+    // console.log(JSON.stringify(data));
     if (props.id!) {
       server_calls.update(props.id, data);
       console.log(`Updated car with id: ${props.id} ${data.year_}`);
       setTimeout(() => {window.location.reload()}, 1000);
       event.target.reset();
     } else {
+      console.log(JSON.stringify(data));
+      console.log(`Created car with ${data.make, data.model, data.year_}`);
       dispatch(chooseMake(data.make));
       dispatch(chooseModel(data.model));
-      dispatch(chooseYear(data.year));
+      dispatch(chooseYear(data.year_));
       server_calls.create(store.getState());
       setTimeout(() => {window.location.reload()}, 1000);
     }
