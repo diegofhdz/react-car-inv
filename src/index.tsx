@@ -8,6 +8,10 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store'
 import { Contact } from './components/Contact';
 import { About } from './components/About';
+import { FirebaseAppProvider, AuthCheck } from 'reactfire';
+import { firebaseConfig } from './firebaseConfig'
+import 'firebase/auth';
+import { SignIn } from './components/SignIn';
 
 
 let myTitle = "Diego's Webpage";
@@ -17,6 +21,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <FirebaseAppProvider firebaseConfig={firebaseConfig} suspense={true}>
     <Provider store={store}>
     <BrowserRouter>
       <Routes>
@@ -24,8 +29,10 @@ root.render(
           <Route path="/carinventory" element={<Dashboard/>}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/signin' element={<SignIn />}/>
       </Routes>
     </BrowserRouter>
     </Provider>
+    </FirebaseAppProvider>
   </React.StrictMode>
 );
