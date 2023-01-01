@@ -4,10 +4,10 @@ import { Home } from './components';
 import { Dashboard } from './components';
 import './style.css';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-// import { AddCarForm } from './components';
-import { CarInventory } from './components/CarInventory';
 import { Provider } from 'react-redux';
 import { store } from './redux/store'
+import { Contact } from './components/Contact';
+import { About } from './components/About';
 
 
 let myTitle = "Diego's Webpage";
@@ -21,8 +21,9 @@ root.render(
     <BrowserRouter>
       <Routes>
           <Route path ="/" element={<Home/>}/>
-          {/* <Route path="/carinventory" element={<CarInventory/>}/> */}
           <Route path="/carinventory" element={<Dashboard/>}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/about' element={<About />}/>
       </Routes>
     </BrowserRouter>
     </Provider>

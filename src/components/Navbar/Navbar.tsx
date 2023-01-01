@@ -80,12 +80,12 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <Button>
-                            <Link to='/addcarform' className={`${classes.navbarItem} ${classes.psides}`}>Contact Us</Link>
+                            <Link to='/contact' className={`${classes.navbarItem} ${classes.psides}`}>Contact Us</Link>
                         </Button>
                     </li>
                     <li>
                         <Button>
-                            <Link to='/About' className={`${classes.navbarItem} ${classes.psides}`}>About Us</Link>
+                            <Link to='/about' className={`${classes.navbarItem} ${classes.psides}`}>About Us</Link>
                         </Button>
                     </li>
                 </ul>

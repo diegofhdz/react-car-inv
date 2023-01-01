@@ -15,7 +15,7 @@ export const AddCarButton = () => {
   }
   return (
     <>
-        <Button onClick={handleOpen}>Add Car</Button>
+        <Button variant='contained' color='primary' onClick={handleOpen}>Add Car</Button>
 
             <Dialog open={open1} onClose={handleClose} aria-labelledby="form-dialog-title">
             <DialogTitle id="form-dialog-title">Add New Car</DialogTitle>

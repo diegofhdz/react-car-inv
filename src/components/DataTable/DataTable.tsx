@@ -10,6 +10,7 @@ import { Button, Dialog,
 import { CarForm } from '../CarForm';
 
 
+
 const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 90, hide:true },
     { field: 'make', headerName: 'Make', flex: 1 },
@@ -45,7 +46,7 @@ export const DataTable = () => {
 
   return (
     <div style={{height: '400px', width: '100%'}}>
-        <h2>My Cars</h2>
+        <h2 style={{ textAlign: 'center' }}>Your Cars</h2>
 
     <DataGrid rows={ carData } columns={ columns } pageSize={5} checkboxSelection = {true} 
     onSelectionModelChange= { (item) =>{
