@@ -75,17 +75,17 @@ export const Navbar = () => {
                 <ul className={`${classes.ul} ${classes.row} ${classes.spaceBetween} ${classes.psides}`}>
                     <li>
                         <Button>
-                        <Link to='/Dashboard' className={`${classes.navbarItem} ${classes.psides}`}>My Cars</Link>
+                        <Link to='/carinventory' className={`${classes.navbarItem} ${classes.psides}`}>My Cars</Link>
                         </Button>
                     </li>
                     <li>
                         <Button>
-                            <Link to='Contact' className={`${classes.navbarItem} ${classes.psides}`}>Contact Us</Link>
+                            <Link to='/addcarform' className={`${classes.navbarItem} ${classes.psides}`}>Contact Us</Link>
                         </Button>
                     </li>
                     <li>
                         <Button>
-                            <Link to='About' className={`${classes.navbarItem} ${classes.psides}`}>About Us</Link>
+                            <Link to='/About' className={`${classes.navbarItem} ${classes.psides}`}>About Us</Link>
                         </Button>
                     </li>
                 </ul>

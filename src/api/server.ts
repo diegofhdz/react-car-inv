@@ -3,7 +3,7 @@ let token = '82db6d59d693e0a4fbe00ef216e17a65f71059569880f08f';
 
 export const server_calls = {
     get: async () => {
-        const response = await fetch(`http://127.0.0.1:5000//api/contacts`,{
+        const response = await fetch(`http://192.168.50.201:5000/api/cars`,{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const server_calls = {
     },
 
     create: async(data: any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000//api/contacts`,{
+        const response = await fetch(`http://192.168.50.201:5000/api/cars`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export const server_calls = {
         return await response.json()
     },
     update: async (id:string, data:any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/.herokuapp.com/api/contacts/${id}`, {
+        const response = await fetch(`http://192.168.50.201:5000/api/cars/${id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const server_calls = {
         });
     },
     delete: async(id:string) => {
-        const response = await fetch(`http://127.0.0.1:5000//api/contacts/${id}`,{
+        const response = await fetch(`http://192.168.50.201:5000/api/cars/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

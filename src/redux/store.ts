@@ -1,7 +1,5 @@
-import React from 'react'
+import { configureStore } from '@reduxjs/toolkit';
+import { reducer } from './slices/RootSlice';
 
-export default function store() {
-  return (
-    null
-  )
-}
+
+export const store = configureStore({reducer, devTools: true})

@@ -42,7 +42,7 @@ export const Home = () => {
             <div className={classes.main_text}>
                 <h1>{ title }</h1>
                 <Button>
-                    <Link to='/Dashboard' className={classes.button_text}>Take me to my Dashboard</Link>
+                    <Link to='/carinventory' className={classes.button_text}>Take me to my Dashboard</Link>
                 </Button>
             </div>
             </div>

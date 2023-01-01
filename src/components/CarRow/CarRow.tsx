@@ -7,8 +7,10 @@ import { Table, TableBody, TableRow, TableCell, TableContainer, TableHead } from
   make: string,
   model: string;
   year: number;
-  dateAdded: string;
+  dateAdded?: string;
  }
+
+ 
 
 export const CarRow = (props: Props) => {
   return (

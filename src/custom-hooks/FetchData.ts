@@ -9,7 +9,7 @@ export const useGetData = () => {
         setData(result);
     }
 
-    useEffect(  () => {
+    useEffect(() => {
         handleDataFetch();
     }, [])
 
